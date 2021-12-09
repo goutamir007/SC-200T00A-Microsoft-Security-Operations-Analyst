@@ -14,26 +14,24 @@ You're a Security Operations Analyst working at a company that implemented Micro
 ### Task 1: Mitigate security alerts
 
 In this task, you will load sample security alerts and review the alert details.
+  
+1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+2. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
 
-2. In the Edge browser, open the Azure portal at (https://portal.azure.com).
+3. In the **Enter password** dialog box, copy, and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
 
-3. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+4. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-4. In the **Enter password** dialog box, copy, and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+5. Under *General*, select **Security alerts** in the portal menu.
 
-5. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+6. Select **Sample alerts** from the command bar (hint: you may need to select the ellipsis button from the command bar).
 
-6. Under *General*, select **Security alerts** in the portal menu.
-
-7. Select **Sample alerts** from the command bar (hint: you may need to select the ellipsis button from the command bar).
-
-8. In the Create sample alerts (Preview) pane make sure your subscription is selected.  Make sure all sample alerts are selected in the *Defender for Cloud plans* area and select **Create sample alerts**.  
+7. In the Create sample alerts (Preview) pane make sure your subscription is selected.  Make sure all sample alerts are selected in the *Defender for Cloud plans* area and select **Create sample alerts**.  
 
     >**Note:** This sample alert creation process may take a few minutes to complete, wait for the "Successfully created sample alerts" notification. Once complete each of the alerts should appear in the *Security alerts* area.
 
-9. For each of the alerts perform the following actions:
+8. For each of the alerts perform the following actions:
 
     A. Select the alert, information about the alert should appear.  Select **View full details**.
 
