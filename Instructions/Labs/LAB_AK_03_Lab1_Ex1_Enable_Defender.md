@@ -14,20 +14,19 @@ You're a Security Operations Analyst working at a company that is implementing c
 ### Task 1: Access the Azure portal and set up a Subscription.
 
 In this task, you will set up an Azure Subscription required to complete this lab and future labs.
+  
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Open the Microsoft Edge browser or open a new tab if already open.
 
-2. Open the Microsoft Edge browser or open a new tab if already open.
+2. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
-3. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
+3. In the **Sign in** dialog box, copy, and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
 
-4. In the **Sign in** dialog box, copy, and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
+4. In the **Enter password** dialog box, copy, and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
 
-5. In the **Enter password** dialog box, copy, and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
+5. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
 
-6. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
-
-7. If the *"Azure Pass - Sponsorship"* subscription is shown (or equivalent name in your selected language), proceed to Task #2. Otherwise, ask your instructor on how to create the Azure subscription with your tenant admin user credentials. **Note:** The subscription creation process could take up to 10 minutes. 
+6. If the *"Azure HOL xxxx"* subscription is shown (or equivalent name in your selected language), proceed to Task #2. Otherwise, ask your instructor on how to create the Azure subscription with your tenant admin user credentials. **Note:** The subscription creation process could take up to 10 minutes. 
 
 >**Important:** These labs have been designed to use less than USD $10 of Azure services during the class.
 
@@ -82,59 +81,57 @@ To make onboarding of your on-premises server easier.  Install Azure Arc, which 
 
 In this task, you will install Azure Arc on an on-premises server.
 
-1. Log in to WINServer virtual machine as Administrator with the password: **Passw0rd!**.  
+1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
-2. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
+2. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
 
-3. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+3. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
 
-4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+4. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
-5. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
+5. In the navigation pane under **Infrastructure** select **Servers**
 
-6. In the navigation pane under **Infrastructure** select **Servers**
+6. Select **+ Add**.
 
-7. Select **+ Add**.
+7. Select **Generate script** in the "Add a single server" section.
 
-8. Select **Generate script** in the "Add a single server" section.
+8. Select **Next** to get to the Resource details tab.
 
-9. Select **Next** to get to the Resource details tab.
-
-10. Select the Resource group you created earlier. Hint: *RG-Defender*
+19. Select the Resource group you created earlier. Hint: *RG-Defender*
 
     >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
 
-11. Review the *Server details* and *Network connectivity* options. Select **Next** to get to the Tags tab.
+10. Review the *Server details* and *Network connectivity* options. Select **Next** to get to the Tags tab.
 
-12. Select **Next** to get to the Download and run script tab.
+11. Select **Next** to get to the Download and run script tab.
 
-13. Select **Register**.
+12. Select **Register**.
 
     >**Note:** Wait at least three (3) minutes for processing.
 
-14. Scroll down and select the **Download** button. Hint: if your browser blocks the download take action in the browser to allow it. In Edge Browser, select the 3 dots "..." and then select **Keep**. 
+13. Scroll down and select the **Download** button. Hint: if your browser blocks the download take action in the browser to allow it. In Edge Browser, select the 3 dots "..." and then select **Keep**. 
 
-15. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
+14. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
 
-16. Enter Administrator for the Username if prompted.
+15. Enter Administrator for the Username if prompted.
 
-17. Enter Passw0rd! for the password if prompted.
+16. Enter Passw0rd! for the password if prompted.
 
-18. Enter: cd C:\Users\Administrator\Downloads
+17. Enter: cd C:\Users\Administrator\Downloads
 
-19. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
+18. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
 
-20. Enter **A** for Yes to All and press enter.
+19. Enter **A** for Yes to All and press enter.
 
-21. Type *.\OnboardingScript.ps1* and press enter.
+20. Type *.\OnboardingScript.ps1* and press enter.
 
-22. Enter **R** to Run once and press enter (this may take a couple minutes).
+21. Enter **R** to Run once and press enter (this may take a couple minutes).
 
-23. Follow the instructions on the last line of the output in PowerShell, to complete the device registration.  This will include authentication of the device through a browser.  Copy the url (https://microsoft.com/devicelogin) and enter it in a new Edge browser tab. Go back to the Windows PowerShell window, copy the code to authenticate and paste it in the previously open tab and select **Next**. Select your tenant admin account and select **Continue** in the *Are you trying to sign in to Azure Connected Machine Agent?* window. 
+22. Follow the instructions on the last line of the output in PowerShell, to complete the device registration.  This will include authentication of the device through a browser.  Copy the url (https://microsoft.com/devicelogin) and enter it in a new Edge browser tab. Go back to the Windows PowerShell window, copy the code to authenticate and paste it in the previously open tab and select **Next**. Select your tenant admin account and select **Continue** in the *Are you trying to sign in to Azure Connected Machine Agent?* window. 
 
-24. After the message *"Successfully Onboarded Resource to Azure"* appears in the Windows PowerShell window, go to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
+23. After the message *"Successfully Onboarded Resource to Azure"* appears in the Windows PowerShell window, go to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
-25. Select **Refresh** until WINServer server name appears.
+24. Select **Refresh** until WINServer server name appears.
 
     >**Note:** This could take a few minutes.
 
