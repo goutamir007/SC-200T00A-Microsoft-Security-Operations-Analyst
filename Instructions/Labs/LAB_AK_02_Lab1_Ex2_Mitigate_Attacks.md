@@ -27,10 +27,19 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. A new incident called "Multi-stage incident..." will appear in the right pane. Allow at least 5 minutes for the incident to appear. Click the incident name to load its details.
 
-1. Click **Manage incident** and a new window blade appears. In here, under *Incident tags* type "Tutorial" and click **Tutorial (Create new)** to create a new tag. Click the **Assign to me** switch and see your account name appears under it. Under *Classification*, click the drop-down menu and select **True alert**. Under *Determination*, click the drop-down menu and select **Security test**. Add any comments if desired and click **Save** to finish.
+1. Select the **Manage incident** button and a new window blade appears. 
 
-1. Review the contents of the Alerts, Devices, Users, Investigations, Evidence and Response, Graph tabs.
+1. Under **Incident tags** type "Tutorial" and select **Tutorial (Create new)** to create a new tag. 
 
-      **Warning:** The simulations and tutorials here are an excellent source of learning through practice.  Simulations and tutorials are being added and edited regularly in the portal.  However, some of these simulations & tutorials may interfere with performance of the labs designed for this training course.  Only perform the simulations and tutorials recommended in the instructions provided for this lab when using the course provided Azure tenant.  You may perform the other simulations and tutorials *after* this training course is complete with this tenant.
+1. Select the toggle **Assign to me** to add your user account as owner of the incident. 
 
-## You have completed the lab.
+1. Under **Classification**, in the drop-down menu select **True alert**. 
+
+1. Under **Determination**, in the drop-down menu select **Security test**. 
+
+1. Add any comments if desired and click **Save** to finish.
+
+1. Review the contents of the Alerts, Devices, Users, Investigations, Evidence and Response, Graph tabs. **Hint:** Some tabs might be hidden due the size of your display. Select the ellipsis tab (...) to make them appear.
+
+>**Warning:** The simulations and tutorials here are an excellent source of learning through practice.  Simulations and tutorials are being added and edited regularly in the portal.  However, some of these simulations & tutorials may interfere with performance of the labs designed for this training course.  Only perform the simulations and tutorials recommended in the instructions provided for this lab when using the course provided Azure tenant.  You may perform the other simulations and tutorials *after* this training course is complete with this tenant.
+
