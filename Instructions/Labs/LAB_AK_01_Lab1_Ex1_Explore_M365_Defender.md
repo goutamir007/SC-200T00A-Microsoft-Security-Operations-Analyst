@@ -81,9 +81,9 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 
 1. Under **Standard protection**, select **manage**.
 
-1. In **EOP protections apply to**, under **Domains** write your tenant's domain name, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+1. In **EOP protections apply to**, under **Domains** write your tenant's domain name, select it and select **Next**. Hint: You tenant's domain name is the same that you have for you admin account, it might be something like WWLx######.onmicrosoft.com. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
 
-1. In **Defender for Office 365 protections apply to**, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+3. In **Defender for Office 365 protections apply to**, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and select **Done** to finish.
 
@@ -96,5 +96,18 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 1. Read the content under **Review and confirm your changes** and select **Confirm** to apply the changes and select **Done** to finish.
 
 1. On the top middle menu, select **Threat policies** to go back and under *Policies*, select **Safe Attachments**. Notice that both preset policies appears here and the Status is On.
+1. In the menu, select the **gear** icon for **Global Settings**.
+
+1. Read through the available integration options and select **Cancel** to go back.
+
+1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+
+1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: "Hang on! We're preparing new spaces for your data and connecting them". It will take several minutes to finish, so leave the page open until the next lab. 
+
+    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+
+
 
 ## You have completed the lab.
